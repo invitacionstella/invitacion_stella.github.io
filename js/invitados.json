@@ -4,7 +4,7 @@
     "paterno": "uribe",
     "materno": "toledo",
     "familia": "Uribe Toledo",
-    "integrantes": ["Elsa Toledo Segura", "José Antonio Uribe Toledo"]
+    "integrantes": ["Elsa Toledo Segura", "José Antonio Uribe Díaz"]
   },
   {
     "id": "padilla-arteaga",
@@ -32,7 +32,7 @@
     "paterno": "uribe",
     "materno": "diaz",
     "familia": "Uribe Díaz",
-    "integrantes": ["Gerardo Uribe", "Tzitzijanik López", "María del Socorro", "+1"]
+    "integrantes": ["Maria Antonieta Uribe", "Georgina Uribe"]
   },
   {
     "id": "torres-gonzales",
@@ -126,9 +126,9 @@
     "integrantes": ["Oswaldo Fabian", "Mirel"]
   },
   {
-    "id": "gonzales-peña",
-    "paterno": "gonzales",
-    "materno": "peña",
+    "id": "pena-santoyo",
+    "paterno": "peña",
+    "materno": "santoyo",
     "familia": "Gonzales Peña",
     "integrantes": ["Alan Peña", "Angie Luna"]
   },
@@ -189,10 +189,18 @@
     "integrantes": ["Elba Laura", "Alfonso del Valle", "S. Rogelio Cuevas", "Amelia", "Elias", "Marcelo"]
   },
   {
-    "id": "arteaga-torres",
-    "paterno": "arteaga",
-    "materno": "torres",
-    "familia": "Arteaga Torres",
-    "integrantes": ["Aurora Torres", "Juan de Dios Torres"]
+    "id": "rubio-gutierrez",
+    "paterno": "rubio",
+    "materno": "gutierrez",
+    "familia": "Rubio Gutierrez",
+    "integrantes": ["Jaime Rubio", "Esposa","Hija"]
+  },
+  {
+    "id": "lopez-valdez",
+    "paterno": "lopez",
+    "materno": "valdez",
+    "familia": "Lopez Valdez",
+    "integrantes": ["Marian Lopez"]
   }
+
 ]
