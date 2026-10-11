@@ -1,0 +1,198 @@
+[
+  {
+    "id": "uribe-toledo",
+    "paterno": "uribe",
+    "materno": "toledo",
+    "familia": "Uribe Toledo",
+    "integrantes": ["Elsa Toledo Segura", "José Antonio Uribe Toledo"]
+  },
+  {
+    "id": "padilla-arteaga",
+    "paterno": "padilla",
+    "materno": "arteaga",
+    "familia": "Padilla Arteaga",
+    "integrantes": ["María de todos los Ángeles", "Karla Paulina (Paglobish)", "Isabella Padilla"]
+  },
+  {
+    "id": "martinez-uribe",
+    "paterno": "martinez",
+    "materno": "uribe",
+    "familia": "Martinez Uribe",
+    "integrantes": ["German Martinez", "Karina Uribe", "Sergio Martinez", "Dante Martinez"]
+  },
+  {
+    "id": "toledo-segura",
+    "paterno": "toledo",
+    "materno": "segura",
+    "familia": "Toledo Segura",
+    "integrantes": ["Alejandra Toledo", "Elvira Toledo", "Soledad Toledo", "Cynthia de Toledo"]
+  },
+  {
+    "id": "uribe-diaz",
+    "paterno": "uribe",
+    "materno": "diaz",
+    "familia": "Uribe Díaz",
+    "integrantes": ["Gerardo Uribe", "Tzitzijanik López", "María del Socorro", "+1"]
+  },
+  {
+    "id": "torres-gonzales",
+    "paterno": "torres",
+    "materno": "gonzales",
+    "familia": "Torres Gonzales",
+    "integrantes": ["José Torres", "Hildelisa Plascencia", "José Torres Jr.", "Luis Ángel"]
+  },
+  {
+    "id": "padilla-flores",
+    "paterno": "padilla",
+    "materno": "flores",
+    "familia": "Padilla Flores",
+    "integrantes": ["Carlos Padilla"]
+  },
+  {
+    "id": "garduza-ramirez",
+    "paterno": "garduza",
+    "materno": "ramirez",
+    "familia": "Garduza Ramirez",
+    "integrantes": ["Danna Garduza", "Ángel Ramirez"]
+  },
+  {
+    "id": "villavicencio-rodriguez",
+    "paterno": "villavicencio",
+    "materno": "rodriguez",
+    "familia": "Villavicencio Rodriguez",
+    "integrantes": ["Luis Villavicencio (Doc Sholo)", "Mirna Rodriguez"]
+  },
+  {
+    "id": "godinez-muro",
+    "paterno": "godinez",
+    "materno": "muro",
+    "familia": "Godinez Muro",
+    "integrantes": ["Ángel Godinez", "Aida Muro", "Juan Pablo Godinez", "Hermana de Juan Pablo"]
+  },
+  {
+    "id": "aranda-hernandez",
+    "paterno": "aranda",
+    "materno": "hernandez",
+    "familia": "Aranda Hernandez",
+    "integrantes": ["Fer Aranda", "Maite Hernandez", "Nikte Aranda"]
+  },
+  {
+    "id": "arteaga-arteaga",
+    "paterno": "arteaga",
+    "materno": "arteaga",
+    "familia": "Arteaga",
+    "integrantes": ["Rosaura Arteaga", "Sophie Arteaga"]
+  },
+  {
+    "id": "barajas-perez",
+    "paterno": "barajas",
+    "materno": "perez",
+    "familia": "Barajas Perez",
+    "integrantes": ["Karina Barajas", "Miguel Barajas", "Alma Perez"]
+  },
+  {
+    "id": "martinez-barajas",
+    "paterno": "martinez",
+    "materno": "barajas",
+    "familia": "Martinez Barajas",
+    "integrantes": ["Antonio Martinez", "Jenifer Barajas", "Miguelito Barajas"]
+  },
+  {
+    "id": "santillan-garcia",
+    "paterno": "santillan",
+    "materno": "garcia",
+    "familia": "Santillan Garcia",
+    "integrantes": ["Alexandra Santillan", "Néstor", "Néstor David", "Hermana de Néstor", "Carlitos Santillan"]
+  },
+  {
+    "id": "miramontes-garcia",
+    "paterno": "miramontes",
+    "materno": "garcia",
+    "familia": "Miramontes Garcia",
+    "integrantes": ["Ericka Garcia"]
+  },
+  {
+    "id": "vazquez-ibarra",
+    "paterno": "vazquez",
+    "materno": "ibarra",
+    "familia": "Vazquez Ibarra",
+    "integrantes": ["Edgar Nicolas", "Aida Lozano"]
+  },
+  {
+    "id": "cornejo-cornejo",
+    "paterno": "cornejo",
+    "materno": "cornejo",
+    "familia": "Cornejo",
+    "integrantes": ["Oswaldo Fabian", "Mirel"]
+  },
+  {
+    "id": "gonzales-peña",
+    "paterno": "gonzales",
+    "materno": "peña",
+    "familia": "Gonzales Peña",
+    "integrantes": ["Alan Peña", "Angie Luna"]
+  },
+  {
+    "id": "cedillo-badillo",
+    "paterno": "cedillo",
+    "materno": "badillo",
+    "familia": "Cedillo Badillo",
+    "integrantes": ["Adolfo Cedillo"]
+  },
+  {
+    "id": "rojas-duarte",
+    "paterno": "rojas",
+    "materno": "duarte",
+    "familia": "Rojas Duarte",
+    "integrantes": ["Jorge Rojas", "Barbara Duarte", "Baby"]
+  },
+  {
+    "id": "alvarez-alvarez",
+    "paterno": "alvarez",
+    "materno": "alvarez",
+    "familia": "Alvarez Alvarez",
+    "integrantes": ["Ulises Alvarez"]
+  },
+  {
+    "id": "moreno-corona",
+    "paterno": "moreno",
+    "materno": "corona",
+    "familia": "Moreno Corona",
+    "integrantes": ["Alan Moreno", "Arlette Corona"]
+  },
+  {
+    "id": "moreno-arellano",
+    "paterno": "moreno",
+    "materno": "arellano",
+    "familia": "Moreno Arellano",
+    "integrantes": ["Rodrigo Moreno"]
+  },
+  {
+    "id": "aguirre-ramirez",
+    "paterno": "aguirre",
+    "materno": "ramirez",
+    "familia": "Aguirre Ramirez",
+    "integrantes": ["Jonathan Abraham"]
+  },
+  {
+    "id": "villalobos-ibarra",
+    "paterno": "villalobos",
+    "materno": "ibarra",
+    "familia": "Villalobos Ibarra",
+    "integrantes": ["Elba Villalobos", "Paz Villalobos"]
+  },
+  {
+    "id": "martinez-villalobos",
+    "paterno": "martinez",
+    "materno": "villalobos",
+    "familia": "Martinez Villalobos",
+    "integrantes": ["Elba Laura", "Alfonso del Valle", "S. Rogelio Cuevas", "Amelia", "Elias", "Marcelo"]
+  },
+  {
+    "id": "arteaga-torres",
+    "paterno": "arteaga",
+    "materno": "torres",
+    "familia": "Arteaga Torres",
+    "integrantes": ["Aurora Torres", "Juan de Dios Torres"]
+  }
+]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/confirmacion.js" defer></script>
+</head>
+<body class="bg-stone-100 min-h-screen flex flex-col items-center justify-center font-serif text-gray-700">
+    <form class="w-10/12 h-fit bg-white p-8 rounded-3xl shadow-lg">
+        <h1 class="italic tracking-wide text-4xl text-center">¿Quienes asistiran?</h1>
+        <h2 class="font-sanz text-gray-400 text-sm text-center mt-2">Confirma con una check quien asistira</h2>
+
+        <section class="p-4 mt-4 border rounded-lg shadow bg-gray-50 flex flex-col gap-2" id="integrantes"></section>
+
+        <section class="flex justify-center mt-4">
+            <button id="btn-confirmar" type="button" class="rounded-full font-sanz bg-stone-200 px-10 py-3 flex items-center justify-center text-[22px]">Confirmar</button>
+        </section>
+        
+        
+    </form>
+
+    <form class="w-10/12 h-fit bg-white p-8 rounded-3xl shadow-lg mt-10">
+        <h1 class="italic tracking-wide text-2xl text-center mt-10">¿No podras acompañarnos?</h1>
+        <h2 class="font-sanz text-gray-400 text-sm text-center mt-2">No te preocupes, avísanos con un clic.</h2>
+
+        <section class="flex justify-center mt-4">
+            <button id="btn-inasistencia" type="button" class="rounded-full font-sanz bg-stone-200 px-10 py-3 flex items-center justify-center text-[22px]">Click aqui!</button>
+        </section>
+    </form>   
+</body>
+</html>

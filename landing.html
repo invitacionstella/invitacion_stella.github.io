@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CAMBIO: título real en lugar de "Document" -->
+      <title>Bautizo de Stella</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+      @keyframes aparecer {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animar-texto {
+        animation: aparecer 2s ease-out forwards;
+      }
+      </style>    
+  </head>
+<body class="bg-stone-100 min-h-screen font-serif text-gray-700">
+
+    
+    <!--Contenedor con imagen de fondo-->
+    <section class="w-full h-screen bg-cover bg-center relative" style="background-image: url('static/images/stella.jpeg');">
+        <!--Texto anidado encima de la imagen-->
+        <section class="absolute inset-0 flex flex-col items-center justify-center bg-black/40">
+            <h1 class="text-7xl font-bold text-white animar-texto">
+                Mi bautizo
+            </h1>
+            <h2 class="text-3xl text-white mt-4 animar-texto">
+                Stella Antonela
+            </h2>
+        </section>
+
+          <!--Agregamos una flecha para indicar un scroll-->
+          <section id="aviso-scroll" class="absolute bottom-6 left-1/2 -translate-x-1/2 z-50 text-center text-[#ffffff]">
+            <section class="animate-bounce">
+              <p class="text-5xl">Desliza</p>
+            <span class="text-4xl">⌄</span>
+            </section>
+
+            <script>
+              const aviso = document.getElementById('aviso-scroll');
+
+              window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                  aviso.classList.add('hidden');
+                }
+              });
+            </script>
+          </section>
+      </section>
+
+    <!--Agregamos la leyenda de stella-->
+    <!-- CAMBIO (en todas las imágenes): loading="lazy" para que las imágenes de abajo se descarguen solo cuando alguien llegue a ellas, y alt descriptivo -->
+    <section>
+        <img src="static/images/leyenda_stella.png" alt="Leyenda de Stella" loading="lazy" class="w-80 h-full mx-auto">
+    </section>
+
+    <!--Agregamos texto de leyenda-->
+    <section>
+        <img src="static/images/texto_leyenda_stella.png" alt="Texto de la leyenda de Stella" loading="lazy" class="w-full h-full object-cover object-center">
+    </section>
+
+    <!--Agregamos 2 texto de leyenda-->
+    <section>
+      <img src="static/images/texto_2_leyenda_stella.png" alt="Continuación de la leyenda de Stella" loading="lazy">
+    </section>
+
+    <!--Agregamos la invitacion-->
+    <section>
+        <img src="static/images/invitacion_marco_encaje.png" alt="Invitación al bautizo de Stella" loading="lazy">
+    </section>
+
+    <!--Agregamos texto entre fotos-->
+    <!-- CAMBIO: overflow-x-clip recorta solo los lados (evita que la página se mueva hacia los lados en el celular) y deja visible lo de arriba y abajo, para que el texto no se corte -->
+    <section class="h-80 mt-6 mb-6 overflow-x-clip">
+      <!--w-full h-full hace que la imagen llene el contenedor. object-cover la escala para cubrir todo el marco, recortando lo que sobre en vez de deformarla. object-center centra ese recorte. scale-[1.5] la agranda al 150%-->
+      <img src="static/images/tarjeta_sin_guirnaldas.png" alt="Tarjeta de la invitación" loading="lazy" class="w-full h-full object-cover object-center scale-[1.5]">
+    </section>
+
+    <!--Agregamos la imagen de la tarjeta de recepcion de fiesta-->
+    <section class="mt-12">
+      <img src="static/images/tarjeta_recepcion.png" alt="Tarjeta de la recepción" loading="lazy" class="w-full h-full object-contain mx-auto">
+    </section>
+
+    <!--Agregamos boton de ubicación-->
+    <!-- CAMBIO: ya no hay un <button> dentro del <a>. El propio enlace tiene el estilo del botón, usa https y rel="noopener noreferrer" -->
+    <section class="flex justify-center">
+      <a id="btn-ver-ubicacion" href="https://maps.app.goo.gl/GEsw3urZzCJX3stAA" target="_blank" rel="noopener noreferrer" class="inline-block rounded-full bg-stone-200 px-10 py-3 text-center text-[22px]">Ver ubicación</a>
+    </section>
+
+    <!--Agregamos un contador, utilizando js-->
+    <div class="flex flex-col items-center justify-center bg-gray-100 p-6 mt-6">
+      <p class="text-4xl italic text-stone-500 mb-4">Cuenta regresiva</p>
+      <div class="flex space-x-6 text-center">
+        <div>
+          <span id="dias" class="text-4xl font-bold text-stone-500">0</span>
+          <p class="text-sm uppercase tracking-wide text-stone-500">Días</p>
+        </div>
+        <div>
+          <span id="horas" class="text-4xl font-bold text-stone-500">0</span>
+          <p class="text-sm uppercase tracking-wide text-stone-500">Horas</p>
+        </div>
+        <div>
+          <span id="minutos" class="text-4xl font-bold text-stone-500">0</span>
+          <p class="text-sm uppercase tracking-wide text-stone-500">Minutos</p>
+        </div>
+        <div>
+          <span id="segundos" class="text-4xl font-bold text-stone-500">0</span>
+          <p class="text-sm uppercase tracking-wide text-stone-500">Segundos</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      //Generamos el script para la cuenta regresiva
+      // CAMBIO: formato de fecha estándar (año-mes-díaThora), que todos los navegadores interpretan igual
+      const fechaObjetivo = new Date("2026-11-14T11:00:00").getTime();
+
+      const intervalo = setInterval(() => {
+        const ahora = new Date().getTime();
+        const diferencia = fechaObjetivo - ahora;
+
+        // CAMBIO: si la fecha ya pasó, se ponen los CUATRO números en 0 y se sale antes de calcular
+        if (diferencia < 0) {
+          clearInterval(intervalo);
+          document.getElementById("dias").textContent = 0;
+          document.getElementById("horas").textContent = 0;
+          document.getElementById("minutos").textContent = 0;
+          document.getElementById("segundos").textContent = 0;
+          return;
+        }
+
+        const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+        const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+        document.getElementById("dias").textContent = dias;
+        document.getElementById("horas").textContent = horas;
+        document.getElementById("minutos").textContent = minutos;
+        document.getElementById("segundos").textContent = segundos;
+      }, 1000);
+    </script>
+
+    <!--Agregamos imagen de mesa de regalos y dentro de ella el link para ir a la mesa de regalos-->
+    <!-- CAMBIO: el enlace usa https -->
+    <section class="-mb-20">
+      <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/60030391" target="_blank" rel="noopener noreferrer">
+        <img src="static/images/texto_mesa_regalos.png" alt="Mesa de regalos" loading="lazy" class="mt-0">
+      </a>
+    </section>
+
+    <!--Agregamos titulo de codigo de vestimenta-->
+    <section>
+      <img src="static/images/dress_code.png" alt="Código de vestimenta" loading="lazy">
+    </section>
+
+    <!--Agregamos foto de codigo de vestimenta-->
+    <section>
+      <img src="static/images/foto_dresscode.png" alt="Ejemplo de vestimenta" loading="lazy">
+    </section>
+
+    <!--Agregamos texto de codigo de vestimenta-->
+    <section>
+      <img src="static/images/texto_dresscode.png" alt="Indicaciones del código de vestimenta" loading="lazy">
+    </section>
+
+    <!--Agregamos foto de cierre-->
+    <section class="mt-6">
+      <img src="static/images/cierre_stella.jpeg" alt="Stella, foto de cierre" loading="lazy">
+    </section>
+
+</body>
+</html> 
